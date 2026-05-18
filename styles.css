@@ -23,6 +23,85 @@ body {
     max-width: 500px;
 }
 
+.spaces-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0;
+}
+
+.spaces-tabs {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.space-tab {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #888;
+    background: #f0f0f0;
+    border: 2px solid transparent;
+    border-bottom: none;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+    bottom: -2px;
+    user-select: none;
+}
+
+.space-tab:hover {
+    background: #e8e8f0;
+    color: #555;
+}
+
+.space-tab.active {
+    background: white;
+    color: #667eea;
+    border-color: #e0e0e0;
+    font-weight: 600;
+}
+
+.space-tab-close {
+    font-size: 16px;
+    line-height: 1;
+    color: #bbb;
+    cursor: pointer;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
+.space-tab-close:hover {
+    color: #ff4757;
+    background: rgba(255, 71, 87, 0.1);
+}
+
+.add-space-btn {
+    padding: 6px 12px;
+    background: none;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    color: #999;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.2s, color 0.2s;
+    flex-shrink: 0;
+}
+
+.add-space-btn:hover {
+    border-color: #667eea;
+    color: #667eea;
+}
+
 h1 {
     color: #333;
     text-align: center;
